@@ -122,18 +122,16 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  color: #404bbf;
   text-decoration: none;
   letter-spacing: 0.02em;
   position: relative;
-  color: #404bbf;
   transition-property: color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
 
-.nav-item:not(:hover),
-.nav-item:not(:focus),
-.nav-item:not(:active) {
+.nav-item:not(:hover) {
   color: #2e2f42;
 }
 
