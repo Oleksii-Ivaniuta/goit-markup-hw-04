@@ -136,7 +136,7 @@ img {
   transition-duration: 250ms;
 }
 
-.nav-item:active::after {
+.nav-item::after {
   width: 100%;
   height: 4px;
   border-radius: 2px;
@@ -145,6 +145,18 @@ img {
   position: absolute;
   left: 0;
   bottom: -1px;
+  display: none;
+  transition-property: display;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.nav-item:active::after {
+  display: inline;
+}
+
+.nav-item:active {
+  color: #404bbf;
 }
 
 .nav-list {
@@ -443,7 +455,7 @@ nav a {
 }
 .footer-container {
   display: flex;
-  justify-content: baseline;
+  align-items: baseline;
 }
 .footer-descr-container {
   margin-right: 120px;
