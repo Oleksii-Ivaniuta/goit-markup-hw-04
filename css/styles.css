@@ -92,23 +92,6 @@ img {
   padding-right: 15px;
   margin: 0 auto;
 }
-
-.social-media {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-}
-
-.social-link {
-  max-width: 40px;
-}
-
-.icon {
-  fill: #4d5ae5;
-  transition-property: fill;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-}
 /*General clases*/
 
 /*Header*/
@@ -118,6 +101,8 @@ img {
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .header-cont {
@@ -127,29 +112,28 @@ img {
   justify-content: space-between;
 }
 
-.page-nav {
+.page-navigation {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-item:hover,
+.nav-item:focus {
+  color: #404bbf;
+}
+
+.nav-item {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   text-decoration: none;
   letter-spacing: 0.02em;
-  align-items: center;
+  position: relative;
   color: #2e2f42;
-  display: flex;
-  flex-direction: row;
   transition-property: color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
-}
-
-.page-nav:hover,
-.page-nav:focus {
-  color: #404bbf;
-}
-
-.nav-item {
-  display: flex;
-  flex-direction: column;
 }
 
 .nav-item:active::after {
@@ -158,9 +142,9 @@ img {
   border-radius: 2px;
   background-color: #404bbf;
   content: '';
-  position: relative;
-  top: 25px;
-  margin-top: -4px;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
 }
 
 .nav-list {
@@ -204,7 +188,6 @@ nav a {
 /*Section1 hero*/
 .hero {
   background-image: linear-gradient(
-      to left,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
@@ -274,6 +257,9 @@ nav a {
 .icon-feature-container {
   border: 1px solid #8e8f99;
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 112px;
   background: #f4f4fd;
@@ -331,10 +317,39 @@ nav a {
   margin-bottom: 8px;
 }
 
-.empl-item:hover .icon {
-  fill: #404bbf;
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
 }
 
+.social-link-box {
+  width: 40px;
+  height: 40px;
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: #404bbf;
+}
+
+.icon {
+  fill: #f4f4fd;
+}
 /*Section3 Employes*/
 
 /*Section4 Portfolio*/
