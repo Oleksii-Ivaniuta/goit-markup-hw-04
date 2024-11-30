@@ -122,7 +122,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  color: #404bbf;
+  color: #2e2f42;
   text-decoration: none;
   letter-spacing: 0.02em;
   position: relative;
@@ -131,8 +131,8 @@ img {
   transition-duration: 250ms;
 }
 
-.nav-item:not(:hover) {
-  color: #2e2f42;
+.header-logo {
+  color: #404bbf;
 }
 
 .nav-item:hover,
