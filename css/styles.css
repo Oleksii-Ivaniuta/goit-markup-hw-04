@@ -122,13 +122,17 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  color: #404bbf;
+  color: #2e2f42;
   text-decoration: none;
   letter-spacing: 0.02em;
   position: relative;
   transition-property: color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
+}
+
+.nav-studio {
+  color: #404bbf;
 }
 
 .nav-item:hover,
